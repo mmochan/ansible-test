@@ -1,0 +1,14 @@
+resources:
+- name: ansible-test
+  type: git
+  source:
+    uri: https://github.com/mmochan/ansible-test
+    branch: master
+
+jobs:
+- name: ansible-test
+  plan:
+  - get: ansible-test
+  - task: tests
+    file: ansible-test/build.yml
+

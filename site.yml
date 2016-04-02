@@ -1,0 +1,10 @@
+---
+- name: Ansible Concourse Example
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  
+  tasks:
+
+  - name: Simple test
+    debug: msg="YAH it Works"
