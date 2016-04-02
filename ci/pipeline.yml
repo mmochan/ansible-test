@@ -9,6 +9,7 @@ jobs:
 - name: ansible-test
   plan:
   - get: ansible-test
+    trigger: true    
   - task: tests
     file: ansible-test/build.yml
 
