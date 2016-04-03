@@ -1,5 +1,5 @@
 resources:
-- name: online-systems
+- name: ansible-test
   type: git
   source:
     uri: https://github.com/mmochan/ansible-test
