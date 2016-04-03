@@ -13,7 +13,11 @@
   #   command: pip list
 
   - name: WHere am I
-    command: ls -al    
+    command: ls -al  
+    register: output  
+
+  - name: Print output
+    debug: msg="{{output}}"
 
   # - name: Gather EC2 facts
   #   ec2_remote_facts:
