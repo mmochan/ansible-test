@@ -9,8 +9,8 @@
   - name: Do you work
     debug: msg="YAH it Works"
 
-  - name: Install boto
-    command: pip list
+  # - name: Install boto
+  #   command: pip list
 
   - name: WHere am I
     command: ls -al    
