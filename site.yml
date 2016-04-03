@@ -10,10 +10,7 @@
     debug: msg="YAH it Works"
 
   - name: Install boto
-    command: pip install boto
-
-  - name: Install boto3
-    command: pip install boto3
+    command: pip list
 
   - name: WHere am I
     command: ls -al    
