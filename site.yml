@@ -9,6 +9,12 @@
   - name: Do you work
     debug: msg="YAH it Works"
 
+  - name: Install boto
+    command: pip install boto
+
+  - name: Install boto3
+    command: pip install boto3
+
   - name: Gather EC2 facts
     ec2_remote_facts:
       region: ap-southeast-2
