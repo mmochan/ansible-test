@@ -1,8 +1,8 @@
 image_resource:
   type: docker-image
   source:
-    repository: williamyeh/ansible
-    tag: centos6
+    repository: ansible/ubuntu14.04-ansible
+    tag: stable
 
 platform: linux
 
