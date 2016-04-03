@@ -6,5 +6,13 @@
   
   tasks:
 
-  - name: Simple test
+  - name: Do you work
     debug: msg="YAH it Works"
+
+  - name: Gather EC2 facts
+    ec2_remote_facts:
+      region: ap-southeast-2
+    register: ec2_instances
+
+  - name: Print facts
+    debug: msg="{{ec2_instances}}"
