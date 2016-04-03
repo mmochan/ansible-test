@@ -15,10 +15,13 @@
   - name: Install boto3
     command: pip install boto3
 
-  - name: Gather EC2 facts
-    ec2_remote_facts:
-      region: ap-southeast-2
-    register: ec2_instances
+  - name: WHere am I
+    command: ls -al    
 
-  - name: Print facts
-    debug: msg="{{ec2_instances}}"
+  # - name: Gather EC2 facts
+  #   ec2_remote_facts:
+  #     region: ap-southeast-2
+  #   register: ec2_instances
+
+  # - name: Print facts
+  #   debug: msg="{{ec2_instances}}"
